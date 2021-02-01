@@ -1,4 +1,4 @@
-const myWorld = [
+const MyWorld = [
     {
         title: 'test1',
         id: 1,
@@ -14,4 +14,4 @@ const myWorld = [
 
 
 
-export default myWorld;
+export default MyWorld;
