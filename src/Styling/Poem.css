@@ -1,22 +1,31 @@
+/* * {
+    border: 1px solid black;
+} */
+
 body {
     background-color: blanchedalmond;
-    border: 1px solid black;
+    height: 100%;
 }
 
-h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-p {
-    width: 100%;
-    font-size: large;
-    font-weight: 300;
-
-}
-
-div {
+.poem_container {
+    margin-bottom: 2%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
+    border: 2px dotted green;
+    width: 100%;
+}
+
+.poem_titles {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+}
+
+.poem_text {
+    width: 50%;
+    font-size: large;
+    font-weight: 300;
+    text-align: center;
+
 }
