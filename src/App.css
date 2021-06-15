@@ -1,9 +1,34 @@
-div {
+/* .App {
+  text-align: center;
+} */
+
+/* * {
+  border: 1px solid black;
+} */
+
+.poems_list {
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* border: 3px solid pink; */
+  flex-wrap: wrap;
 }
 
-p {
+.welcome_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  /* justify-content: space-around;
+  align-items: center; */
+}
+
+.welcome {
+  text-align: center;
+  width: 100%;
+}
+
+.welcome_writings {
   text-align: center;
 }
