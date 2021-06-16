@@ -1,10 +1,10 @@
 import React from 'react';
-import MyWorld from './MyWorld';
+import PoemWorld from './PoemWorld';
 import Poem from './Poem';
 
 const PoemList = () => {
     return (
-       MyWorld.map((poem)=> (
+       PoemWorld.map((poem)=> (
         <Poem key={poem.id} poem={poem} />
         ) )
     )

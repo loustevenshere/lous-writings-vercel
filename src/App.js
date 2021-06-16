@@ -1,21 +1,36 @@
 import React from 'react';
 import './App.css';
-import PoemList from './Components/PoemList';
+import PoemList from './Components/PoemComponents/PoemList';
+import NoteList from './Components/NoteComponents/NoteList';
+import DreamList from './Components/DreamComponents/DreamList';
+import { Route } from 'react-router-dom';
 
 function App() {
  
   return (
     <>
-    <div className="welcome_container">
-<h1 className="welcome">Lou's Mind</h1>
+
+  <Route exact path='/'>
+ <div className="header">
+ <h1 className="title">Lou's Mind</h1>
 <h4>Poems</h4>
 <h4>Notes</h4>
 <h4>Dreams</h4>
-  </div>
-  <div className="poems_list">
+ </div>
+  </Route>
+
+<Route path='/poems'>
 <PoemList />
-  </div>
-</>
+</Route>
+
+<Route path='/notes'>
+<NoteList />
+</Route>
+
+<Route path='/dreams'>
+<DreamList />
+</Route>
+    </>
   
 
   );

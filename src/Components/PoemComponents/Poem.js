@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../Styling/Poem.css'
+import '../../Styling/Poem.css'
 
 const Poem = ({poem}) => {
     const [click, setclick] = useState(false);
