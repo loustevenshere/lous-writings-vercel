@@ -1,9 +1,20 @@
 const PoemWorld = [
     {
-        title: 'Something',
+        title: 'A Younger Man',
         id: 1,
-        text: `Doing something is so definite, Doing nothing Actions are so black and white, 
-        Perception defines us,I like to think`
+        text: `Had I been a younger man
+        I wouldn't go to college
+        With Skin in the game
+        I'd sign an ISA 
+        or backpack through Africa
+        You see I don't have all the answers
+        Barely have the questions
+        But when I muster up enough gusto 
+        to go out and live life
+        to take chances, calculated risk
+        that's when I feel most alive
+        So maybe everything isn't a slam dunk
+        But you don't know until you try`
     },
     {
         title: 'Humans',
