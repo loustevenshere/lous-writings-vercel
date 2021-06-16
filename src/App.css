@@ -29,6 +29,7 @@
   width: 100%;
 }
 
-.welcome_writings {
+h4 {
+  display: inline;
   text-align: center;
 }

@@ -7,9 +7,10 @@ function App() {
   return (
     <>
     <div className="welcome_container">
-<h1 className="welcome">Welcome</h1>
-<p className="welcome_writings">This is a place where I can store my writings</p>
-{/* <p>My name is Louis Stevens and I hope you enjoy</p> */}
+<h1 className="welcome">Lou's Mind</h1>
+<h4>Poems</h4>
+<h4>Notes</h4>
+<h4>Dreams</h4>
   </div>
   <div className="poems_list">
 <PoemList />
