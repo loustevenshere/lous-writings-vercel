@@ -7,29 +7,31 @@ import { Route, useHistory } from 'react-router-dom';
 
 function App() {
 
-  const history = useHistory()
+  const history = useHistory();
 
   const poempage = () => {
     history.push('/poems')
-  }
+  };
 
   const notepage = () => {
     history.push('/notes')
-  }
+  };
 
   const dreampage = () => {
     history.push('/dreams')
-  }
+  };
  
   return (
     <>
 
   <Route exact path='/'>
  <div className="header">
- <h1 className="title">Lou's Mind</h1>
+ <h1 className="title">Lous Mind</h1>
+ <ul>
 <h4 onClick={poempage}>Poems</h4>
 <h4 onClick={notepage}>Notes</h4>
 <h4 onClick={dreampage}>Dreams</h4>
+ </ul>
 <p>Click any of the options above to enter</p>
  </div>
   </Route>

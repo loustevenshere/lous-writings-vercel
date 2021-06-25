@@ -27,9 +27,28 @@
 .title {
   text-align: center;
   width: 100%;
+  font-size: 200%;
+  font-family: 'Merriweather', serif;
+}
+
+ul {
+  width: 96.5%;
+  display: flex;
+  justify-content: center;
 }
 
 h4 {
   display: inline;
   text-align: center;
+  text-decoration: underline;
+  font-size: larger;
+  margin-right: 2%;
+}
+
+p {
+  text-align: center;
+  margin-top: 10%;
+  text-shadow: 1px 1px white;
+  font-style: italic;
+  margin-left: 1%;
 }

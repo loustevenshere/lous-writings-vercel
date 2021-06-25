@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const Note = ({note}) => {
     const [click, setclick] = useState(false);
 
