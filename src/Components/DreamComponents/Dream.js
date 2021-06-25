@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../Styling/Dream.css'
 
 const Dream = ({dream}) => {
     const [click, setclick] = useState(false);
@@ -9,7 +10,7 @@ const Dream = ({dream}) => {
 
     return (
         <div>
-            <h1 onClick={handleClick}>{dream.title}</h1>
+            <h2 className="dream_title" onClick={handleClick}>{dream.title}</h2>
             {click ? <p>{dream.text}</p> : null}
         </div>
     )

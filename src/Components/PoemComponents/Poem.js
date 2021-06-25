@@ -11,8 +11,8 @@ const Poem = ({poem}) => {
 
     return (
         <div className="poem_container">
-        <h1 className="poem_titles" onClick={handleClick}>{poem.title}</h1>
-        {click ? <p className="poem_text">{poem.text}</p> : null}
+        <h2 className="poem_titles" onClick={handleClick}>{poem.title}</h2>
+        {click ? <div className="text_container"><p className="poem_text">{poem.text}</p></div> : null}
 
         </div>
     )

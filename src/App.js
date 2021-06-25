@@ -32,7 +32,7 @@ function App() {
 <h4 onClick={notepage}>Notes</h4>
 <h4 onClick={dreampage}>Dreams</h4>
  </ul>
-<p>Click any of the options above to enter</p>
+<p className="enter_info">Click any of the options above to enter</p>
  </div>
   </Route>
 

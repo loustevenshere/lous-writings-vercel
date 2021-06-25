@@ -10,7 +10,7 @@ const Note = ({note}) => {
 
     return (
         <div className="note_container">
-            <h1 onClick={handleClick}>{note.title}</h1>
+            <h2 onClick={handleClick}>{note.title}</h2>
             {click ? <p>{note.text}</p> : null}
         </div>
     )
