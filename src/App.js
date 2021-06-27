@@ -1,20 +1,53 @@
 import React from 'react';
 import './App.css';
-import PoemList from './Components/PoemList';
+import PoemList from './Components/PoemComponents/PoemList';
+import NoteList from './Components/NoteComponents/NoteList';
+import DreamList from './Components/DreamComponents/DreamList';
+import { Route, useHistory } from 'react-router-dom';
 
 function App() {
+
+  const history = useHistory();
+
+  const poempage = () => {
+    history.push('/poems')
+  };
+
+  const notepage = () => {
+    history.push('/notes')
+  };
+
+  const dreampage = () => {
+    history.push('/dreams')
+  };
  
   return (
     <>
-    <div className="welcome_container">
-<h1 className="welcome">Welcome</h1>
-<p className="welcome_writings">This is a place where I can store my writings</p>
-{/* <p>My name is Louis Stevens and I hope you enjoy</p> */}
-  </div>
-  <div className="poems_list">
+
+  <Route exact path='/'>
+ <div className="header">
+ <h1 className="title">Lous Mind</h1>
+ <ul>
+<h4 onClick={poempage}>Poems</h4>
+<h4 onClick={notepage}>Notes</h4>
+<h4 onClick={dreampage}>Dreams</h4>
+ </ul>
+<p className="enter_info">Click any of the options above to enter</p>
+ </div>
+  </Route>
+
+<Route path='/poems'>
 <PoemList />
-  </div>
-</>
+</Route>
+
+<Route path='/notes'>
+<NoteList />
+</Route>
+
+<Route path='/dreams'>
+<DreamList />
+</Route>
+    </>
   
 
   );

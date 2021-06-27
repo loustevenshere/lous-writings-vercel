@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../Styling/Poem.css'
+import '../../Styling/Poem.css'
 
 const Poem = ({poem}) => {
     const [click, setclick] = useState(false);
@@ -11,8 +11,8 @@ const Poem = ({poem}) => {
 
     return (
         <div className="poem_container">
-        <h1 className="poem_titles" onClick={handleClick}>{poem.title}</h1>
-        {click ? <p className="poem_text">{poem.text}</p> : null}
+        <h2 className="poem_titles" onClick={handleClick}>{poem.title}</h2>
+        {click ? <div className="text_container"><p className="poem_text">{poem.text}</p></div> : null}
 
         </div>
     )
